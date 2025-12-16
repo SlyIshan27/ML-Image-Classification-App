@@ -5,6 +5,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from vehicleModel import VehicleModel
 from clothesModel import ClothesModel
+from foodModel import FoodModel
 import base64
 from io import BytesIO
 import time
@@ -26,6 +27,9 @@ def handleData():
     elif choice == "Clothes":
         clothesModel = ClothesModel(inputImage)
         prediction, confidence = clothesModel.runModel()
+    elif choice == "Food":
+        foodModel = FoodModel(inputImage)
+        prediction, confidence = foodModel.runModel()
     
     buffer = BytesIO()
     inputImage.save(buffer, format="PNG")

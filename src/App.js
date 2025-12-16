@@ -164,6 +164,11 @@ function Home() {
               <input type="radio" name="techniques" value="Clothes" checked={choice == "Clothes"} onChange={(e) => setChoice(e.target.value)} />
               Clothes Classification
             </label>
+
+            <label>
+              <input type="radio" name="techniques" value="Food" checked={choice == "Food"} onChange={(e) => setChoice(e.target.value)} />
+              Food Classification
+            </label>
           </div>
 
           <label>Upload Image: </label>

@@ -2,14 +2,10 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-class ClothesModel:
-
-    model = tf.keras.models.load_model('models/clothesClassificationV4.h5')
-
-    classNames = [
-        'Dress', 'Hoodies/Sweater', 'Jackets/Coats', 'Other', 'Shirt',
-        'Shorts', 'Skirt', 'T-Shirt', 'Trousers/Pants/Jeans'
-    ]
+class FoodModel:
+    model = tf.keras.models.load_model('models/foodClassificationV1.h5')
+    
+    classNames = ['Food', 'Non-Food']
     
     def __init__(self, image):
         self.image = image
