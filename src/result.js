@@ -32,6 +32,7 @@ function Result() {
           <p><strong>Choice:</strong> {result.choice}</p>
           <p><strong>Prediction:</strong> {result.prediction}</p>
           <p><strong>Confidence:</strong> {(result.confidence * 100).toFixed(2)}%</p>
+          <p><small>*Note: Some predictions may be incorrect. We are improving the accuracy of our current models by implementing some more data augmentation</small></p>
         </div>
         {result.image ? (
           <div className="image-container">

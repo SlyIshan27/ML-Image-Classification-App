@@ -36,7 +36,7 @@ def handleData():
     buffer.seek(0)
     encodedBytes = base64.b64encode(buffer.read())
     encodedString = encodedBytes.decode("utf-8")
-    time.sleep(5)
+    time.sleep(2)
     return jsonify({
         "message": "Image received successfully",
         "choice": choice,

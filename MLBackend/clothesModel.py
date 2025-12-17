@@ -7,7 +7,7 @@ class ClothesModel:
     model = tf.keras.models.load_model('models/clothesClassificationV4.h5')
 
     classNames = [
-        'Dress', 'Hoodies/Sweater', 'Jackets/Coats', 'Other', 'Shirt',
+        'Dress', 'Hoodies/Sweater', 'Jackets/Coats', 'Other/Non-Clothes Item', 'Shirt',
         'Shorts', 'Skirt', 'T-Shirt', 'Trousers/Pants/Jeans'
     ]
     
