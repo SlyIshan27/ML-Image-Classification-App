@@ -5,9 +5,7 @@
 /.pnp
 .pnp.js
 
-#Models
-*.h5
-MLBackend/models/
+
 
 # testing
 /coverage
