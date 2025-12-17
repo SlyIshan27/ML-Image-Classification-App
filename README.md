@@ -20,9 +20,46 @@ Upload an image directly from the browser
 ## System Architecture
 ![System Architecture](ReadMeFiles/Concept%20map.png)
 
+# Demo and Running the Code
+
+## Directory and Package installation/setup
+
+Directory Setup:
+
+``` git
+git clone https://github.com/SlyIshan27/ML-Image-Classification-App.git
+cd ML-Image-Classification
+```
+Requirements/Package setup (For tensorflow/keras, flask, Pillow, etc):
+
+```
+pip install -r MLBackend/requirements.txt
+```
+or
+```
+cd MLBackend
+pip install -r requirements.txt
+```
+# Running the App
+In one terminal run this command for the frontend:
+```
+npm start
+```
+In another terminal run these commands for the backend:
+```
+cd MLBackend
+python3 postRequest.py
+```
+Make sure both terminals are running concurrently!
+# Demo
+## Vehicle Classification
+![Part1](ReadMeFiles/DemoMLPart1.gif)
+## Clothes Classification
+![Part2](ReadMeFiles/DemoMLPart2.gif)
+## Food Classification
+![Part3](ReadMeFiles/DemoMLPart3.gif)
+
 ## Machine Learning Models Design and Training Pipeline
-
-
 All classification tasks in this project (vehicle, clothing, food, and animal categories) were implemented using custom-built Convolutional Neural Networks (CNNs) developed with TensorFlow and Keras. Each model was trained independently on its own dataset but followed a consistent, well-structured training pipeline.
 
 ### Dataset Preparation & Cleaning
@@ -240,35 +277,3 @@ Response Construction:
 
 The JSON response is then shown in the frontend and formatted properly to show the output to the user.
 
-# Demo and Running the Code
-
-## Directory and Package installation/setup
-
-Directory Setup:
-
-``` git
-git clone https://github.com/SlyIshan27/ML-Image-Classification-App.git
-cd ML-Image-Classification
-```
-Requirements/Package setup (For tensorflow/keras, flask, Pillow, etc):
-
-```
-pip install -r MLBackend/requirements.txt
-```
-or
-```
-cd MLBackend
-pip install -r requirements.txt
-```
-## Running App
-In one terminal run this command for the frontend:
-```
-npm start
-```
-In another terminal run these commands for the backend:
-```
-cd MLBackend
-python3 postRequest.py
-```
-
-## Demo

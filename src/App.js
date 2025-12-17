@@ -144,8 +144,8 @@ function Home() {
       <div class="shooting-star"></div>
       <div className="App"> 
         <div className="App-header">
-        <h4>Welcome to the Detectify App. An ML image classification model! Detect Vehicles and Clothes!</h4>
-        <p>Upload your image, for image classification!</p>
+        <h4>Welcome to the Detectify App. An ML image classification model! Detect Vehicles, Clothes And Food!</h4>
+        <p>Select an option and upload your image for image classification!</p>
         <Alert 
             message={alert.message} 
             type={alert.type}
